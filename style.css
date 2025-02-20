@@ -1,0 +1,208 @@
+/* Устанавливаю основной шрифт и цвет фона страницы */
+
+body {
+    font-family: "JetBrains Mono";
+    text-align: center;
+    padding: 0;
+    background-color: #5C5E6B;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Высота экрана */
+    margin: 0;
+}
+
+/* Настраиваю шапку сайта */
+
+header {
+    background-color: #747896;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+header h1, p, a {
+    margin: 3px;
+}
+
+header p {
+    text-shadow: 1px 1px 2px white;
+}
+
+.github-icon  {
+    position: absolute;
+    right: 37%;
+    bottom: 91%;
+}
+
+.telegram-icon {
+    position: absolute;
+    left: 36.3%;
+    bottom: 91%;
+}
+
+.tg {
+    color: white;
+    position: absolute;
+    left: 39%;
+    bottom: 92%;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.tg:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.tg:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+     
+
+
+.ds {
+    color: white;
+    position: absolute;
+    right: 39.8%;
+    bottom: 92%;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.ds:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.ds:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+     
+/* Настраиваю блок с проектами */
+
+main h3 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    color: #747896;
+}
+
+.project h3 {
+    margin: 0;
+    text-align: unset;
+}
+
+.project a {
+    font-size: 20px;
+    position: relative;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aproject:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: gray; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.aproject:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: gray; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+     
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.project {
+    position: relative;
+    opacity: 0; /* Скрываем изначально */
+    animation: slideUp 1s ease-out forwards;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-image);
+    background-size: 100%;
+    background-position: center 5%;
+    color: #757FC0;
+    border: solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px) scale(10); /* Поднимаем на 10px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+}
+
+
+/* Настраиваю "подвал" сайта */
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color:#747896;
+    color: white;
+}

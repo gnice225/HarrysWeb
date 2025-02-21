@@ -4,17 +4,41 @@ body {
     font-family: "JetBrains Mono";
     text-align: center;
     padding: 0;
-    background-color: #5C5E6B;
+    background-color: rgb(0, 0, 0.5);
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Высота экрана */
-    margin: 0;    
+    margin: 0;
+    z-index: 1;    
 }
 
-/* Настраиваю шапку сайта */
+
+/* Видео фоном */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Затемняющий оверлей */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Измените 0.5 для другого уровня затемнения */
+    z-index: 0; /* Должен быть выше видео, но ниже контента */
+}
+
 
 /* Настраиваю шапку */
 header {
+    z-index: 1;
     background-color: #747896;
     color: white;
     padding: 20px;
@@ -61,6 +85,7 @@ main h3 {
     margin-top: 10px;
     margin-bottom: 1px;
     color: #747896;
+    z-index: 1;
 }
 
 .project h3 {
@@ -128,11 +153,12 @@ main h3 {
     color: #757FC0;
     border: solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
 }
 
 .project:hover {
-    transform: translateY(-10px) scale(10); /* Поднимаем на 10px */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+    transform: translateY(-10px) scale(20); /* Поднимаем на 10px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8); /* Добавляем тень */
 }
 
 
@@ -143,4 +169,5 @@ footer {
     padding: 15px;
     background-color:#747896;
     color: white;
+    z-index: 1;
 }

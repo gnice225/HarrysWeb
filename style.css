@@ -13,42 +13,44 @@ body {
 
 /* Настраиваю шапку сайта */
 
+/* Настраиваю шапку */
 header {
     background-color: #747896;
     color: white;
     padding: 20px;
-    margin-bottom: 0px;
+    text-align: center;
 }
 
-header h1, p, a {
-    margin: 3px;
+header h1, p {
+    margin: 1px;
 }
 
-header p {
-    text-shadow: 1px 1px 2px white;
-}
-
-.telegramdiv {
+/* Контейнер для центрирования заголовка и иконок */
+.header-content {
     display: flex;
-    margin: 1px 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Отступы между элементами */
+    position: relative;
 }
 
-.telegramdiv a {
-    color: white;
-    text-decoration: none;
-}
-
-
-.githubdiv {
+/* Стили для иконок */
+.social-icons {
+    position: relative;
     display: flex;
-    margin: 1px 500px;
+    align-items: center;
+    top: 20px;
 }
 
-.githubdiv a {
-    color: white;
-    text-decoration: none;
+.social-icons img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.2s;
 }
 
+.social-icons img:hover {
+    transform: scale(1.1);
+}
 
 /* Настраиваю блок с проектами */
 

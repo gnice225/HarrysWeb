@@ -4,7 +4,7 @@ body {
     font-family: "JetBrains Mono";
     text-align: center;
     padding: 0;
-    background-color: rgb(0, 0, 0.5);
+    background-color: #575d85;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Высота экрана */
@@ -12,27 +12,6 @@ body {
     z-index: 1;
 }
 
-/* Видео фоном */
-.background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
-
-/* Затемняющий оверлей */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5); /* Измените 0.5 для другого уровня затемнения */
-    z-index: 0; /* Должен быть выше видео, но ниже контента */
-}
 
 /* Настраиваю шапку */
 header {

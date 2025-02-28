@@ -1,7 +1,7 @@
 /* Устанавливаю основной шрифт и цвет фона страницы */
 
 body {
-    font-family: "JetBrains Mono";
+    font-family: url("src/JetBrains_Mono/JetBrainsMono-Bold.ttf");
     text-align: center;
     padding: 0;
     background-color: #575d85;
@@ -130,6 +130,7 @@ main h3 {
     border: solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
+
 }
 
 .project:hover {

@@ -1,7 +1,12 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("src/JetBrains_Mono/JetBrainsMono-Bold.ttf");
+}
+
 /* Устанавливаю основной шрифт и цвет фона страницы */
 
 body {
-    font-family: url("src/JetBrains_Mono/JetBrainsMono-Bold.ttf");
+    font-family: "JetBrains Mono";
     text-align: center;
     padding: 0;
     background-color: #575d85;

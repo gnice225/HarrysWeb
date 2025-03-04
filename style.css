@@ -85,6 +85,7 @@ header h1, p {
 	vertical-align: top;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .about_me:focus-visible {
 	border: 1px solid #4c51f9;
 	outline: none;

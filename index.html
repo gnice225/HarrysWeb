@@ -21,7 +21,7 @@
                 </a>
             </div>
         </div>
-        <button class="about_me">
+        <button onclick="window.location.href = 'src/about_me.html'" class="about_me">
             ОБО МНЕ 
         </button>
     </header>
@@ -57,42 +57,36 @@
     </div>
 
     <script>
-        // Get the modal
+
         var modal = document.getElementById("telegramModal");
 
-        // Get the button that opens the modal
         var telegramIcon = document.querySelector('.social-icons a[href="https://t.me/man300iqmoment"]');
 
-        // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close-button")[0];
 
-        // When the user clicks the button, open the modal
         telegramIcon.onclick = function(event) {
-            event.preventDefault(); // Prevent following the link
+            event.preventDefault(); 
             modal.style.display = "block";
-            // Trigger reflow to ensure transition works
             modal.offsetWidth;
             modal.classList.add('show');
             document.body.classList.add('no-scroll');
         }
 
-        // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.classList.remove('show');
             setTimeout(function() {
                 modal.style.display = "none";
                 document.body.classList.remove('no-scroll');
-            }, 300); // Match the transition duration (0.3s = 300ms)
+            }, 300); 
         }
 
-        // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.classList.remove('show');
                 setTimeout(function() {
                     modal.style.display = "none";
                     document.body.classList.remove('no-scroll');
-                }, 300); // Match the transition duration (0.3s = 300ms)
+                }, 300); 
             }
         }
     </script>

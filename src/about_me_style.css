@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("JetBrains_Mono/JetBrainsMono-Light.ttf");
+}
+
+.info {
+    font-family: "JetBrains Mono";
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    padding: 20px;
+    width: 1100px;
+    margin: 200px auto;
+    border-radius: 20px;
+    background-color: #747896;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+}
+
+.button_back {
+	display: inline-block;	
+	box-sizing: border-box;
+	outline: none;
+	border: 1px solid #575d85;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 20px;
+	font-weight: 600;
+    width: 200px;
+	text-decoration: none;
+	color: white;
+    font-family: "JetBrains Mono";
+	background-color: #575d85;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button_back:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+.button_back:hover {
+    transform: translateY(-1px) scale(1); /* Поднимаем на 10px */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+}
+.button_back:active {
+	background-color: #808080;
+}

@@ -242,3 +242,42 @@ footer {
 .modal.show {
     opacity: 1;
 }
+
+@media(max-width: 992px){
+
+    header h1, p {
+        font-size: 80px;
+    }
+
+    footer p {
+        font-size: 40px;
+    }
+
+    .about_me {
+        font-size: 50px;
+        width: 300px;
+        height: 80px;
+    }
+
+    .social-icons {
+        top: 40px;
+    }
+
+    .social-icons img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project {
+        max-width: 800px;
+        padding: 50px;
+        border-radius: 50px;
+    }
+    .project a {
+        font-size: 50px;
+    }
+    .project h3 {
+        font-size: 70px;
+        font-weight: bolder;
+    }
+}

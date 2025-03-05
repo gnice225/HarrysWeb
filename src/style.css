@@ -110,6 +110,10 @@ main h3 {
     z-index: 1;
 }
 
+main {
+    flex: 1;
+}
+
 .project h3 {
     margin: 0;
     text-align: unset;

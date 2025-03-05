@@ -3,14 +3,35 @@
     src: url("JetBrains_Mono/JetBrainsMono-Light.ttf");
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+	margin-bottom: 130px;
+}
+
+
 .info {
     font-family: "JetBrains Mono";
     font-size: 20px;
-    font-weight: 100;
     color: white;
+	margin: auto;
     padding: 20px;
     width: 1100px;
-    margin: 200px auto;
     border-radius: 20px;
     background-color: #747896;
     box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
@@ -50,4 +71,13 @@
 }
 .button_back:active {
 	background-color: #808080;
+}
+
+footer {
+    margin-top: auto; /* Фиксируем footer внизу */
+    padding: 15px;
+    background-color: #747896;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }

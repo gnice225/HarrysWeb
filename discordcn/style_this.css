@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("JetBrains_Mono/JetBrainsMono-Light.ttf");
+}
+
+
+header {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+header p {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+.about_me {
+    font-family: "JetBrains Mono";
+    font-weight: 500;
+}
+
+main {
+    font-family: "JetBrains Mono";
+    font-weight: 100;
+    display: flex;
+    background-color: #747896;
+    color: white;
+    width: 800px;
+    text-align: center;
+    justify-content: flex-start;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-of-project img {
+    border-radius: 10px;
+    max-width: 900px;
+    height: 630px;
+    margin: 10px;
+    border: 5px solid #747896;
+}

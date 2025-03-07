@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("src/JetBrains_Mono/JetBrainsMono-Medium.ttf");
+}
+
+/* Устанавливаю основной шрифт и цвет фона страницы */
+
+body {
+    font-family: "JetBrains Mono";
+    text-align: center;
+    padding: 0;
+    background-color: #575d85;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Высота экрана */
+    margin: 0;
+    z-index: 1;
+}
+
+
+/* Настраиваю шапку */
+header {
+    z-index: 1;
+    background-color: #747896;
+    color: white;
+    padding: 20px;
+    margin: 20px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1, p {
+    margin: 1px;
+}
+
+/* Контейнер для центрирования заголовка и иконок */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Отступы между элементами */
+    position: relative;
+}
+
+/* Стили для иконок */
+.social-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 20px;
+}
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.about_me {
+	display: inline-block;	
+	box-sizing: border-box;
+	outline: none;
+	border: 1px solid #575d85;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 20px;
+	font-weight: 600;
+    width: 200px;
+	text-decoration: none;
+	color: white;
+    font-family: "JetBrains Mono";
+	background-color: #575d85;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about_me:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+.about_me:hover {
+    transform: translateY(-1px) scale(1); /* Поднимаем на 10px */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+}
+.about_me:active {
+	background-color: #808080;
+}
+
+/* Настраиваю блок с проектами */
+
+main h3 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    color: #747896;
+    z-index: 1;
+}
+
+.project h3 {
+    margin: 0;
+    text-align: unset;
+}
+
+.project a {
+    font-size: 20px;
+    position: relative;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aproject:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: gray; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.aproject:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: gray; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+     
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project {
+    position: relative;
+    opacity: 0; /* Скрываем изначально */
+    animation: slideUp 1s ease-out forwards;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-image);
+    background-size: 100%;
+    background-position: center 5%;
+    color: #757FC0;
+    border: solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+
+}
+
+.project:hover {
+    transform: translateY(-10px) scale(20); /* Поднимаем на 10px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8); /* Добавляем тень */
+}
+
+/* Настраиваю "подвал" сайта */
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color:#747896;
+    color: white;
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #888;
+    width: fit-content; /* Could be more or less, depending on screen size */
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Close Button */
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal animation classes */
+.modal.show {
+    opacity: 1;
+}
+
+@media(max-width: 992px){
+
+    header h1, p {
+        font-size: 80px;
+    }
+
+    footer p {
+        font-size: 40px;
+    }
+
+    .about_me {
+        font-size: 50px;
+        width: 300px;
+        height: 80px;
+    }
+
+    .social-icons {
+        top: 40px;
+    }
+
+    .social-icons img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project {
+        max-width: 800px;
+        padding: 50px;
+        border-radius: 50px;
+    }
+    .project a {
+        font-size: 50px;
+    }
+    .project h3 {
+        font-size: 70px;
+        font-weight: bolder;
+    }
+}

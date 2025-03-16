@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts_style.css">
+    <title>Контакты</title>
+    <style>
+        .contacts_div p {
+            cursor: pointer;
+            user-select: none;
+        }
+        .copy-text {
+            font-weight: bold; /* Можно добавить выделение */
+        }
+    </style>
+    <script>
+        function copyText(element) {
+            const text = element.innerText; // Получаем текст внутри span
+            navigator.clipboard.writeText(text).then(() => {
+                element.style.color = "gray"; // Визуальный эффект
+                setTimeout(() => { element.style.color = ""; }, 100);
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>МОИ КОНТАКТЫ</h1>
+    </header>
+
+    <main>
+        <div class="contacts_div">
+            <p>Email: <span class="copy-text" onclick="copyText(this)">gnice225@gmail.com</span></p>
+            <p>Telegram: <span class="copy-text" onclick="copyText(this)">man300iqmoment</span></p>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 | Harrys Dev by harryys
+    </footer>
+</body>
+</html>

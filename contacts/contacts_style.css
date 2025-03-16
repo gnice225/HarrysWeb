@@ -1,0 +1,19 @@
+.contacts_div {
+    border-radius: 10px;
+    background-color: #747896;
+    width: fit-content;
+    font-weight: 450;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+header {
+    margin-bottom: auto ;
+}
+
+footer {
+    margin-top: 200;
+}

@@ -9,7 +9,7 @@ body {
     font-family: "JetBrains Mono";
     text-align: center;
     padding: 0;
-    background-color: #575d85;
+    background-color: #252b2b;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Высота экрана */
@@ -21,7 +21,7 @@ body {
 /* Настраиваю шапку */
 header {
     z-index: 1;
-    background-color: #747896;
+    background-color: #4c4f54;
     color: white;
     padding: 20px;
     margin: 20px 20px;

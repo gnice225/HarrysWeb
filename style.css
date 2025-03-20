@@ -84,7 +84,7 @@ header h1, p {
 }
 .about_me:hover {
     transform: translateY(-1px) scale(1); /* Поднимаем на 10px */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* Добавляем тень */
 }
 .about_me:active {
 	background-color: #808080;
@@ -120,7 +120,7 @@ header h1, p {
 }
 .contacts:hover {
     transform: translateY(-1px) scale(1); /* Поднимаем на 10px */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* Добавляем тень */
 }
 .contacts:active {
 	background-color: #808080;

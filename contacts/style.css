@@ -9,7 +9,7 @@ body {
     font-family: "JetBrains Mono";
     text-align: center;
     padding: 0;
-    background-color: #575d85;
+    background-color: #222526;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Высота экрана */
@@ -21,62 +21,44 @@ body {
 /* Настраиваю шапку */
 header {
     z-index: 1;
-    background-color: #747896;
+    background-color: #353a3e;
     color: white;
-    padding: 20px;
-    margin: 20px 20px;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     text-align: center;
-    border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1, p {
     margin: 1px;
+    color: #bfbfbf;
 }
+
 
 /* Контейнер для центрирования заголовка и иконок */
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px; /* Отступы между элементами */
-    position: relative;
+    position: relative;   
 }
-
-/* Стили для иконок */
-.social-icons {
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: 12px;
-}
-
-.social-icons img {
-    width: 52px;
-    height: 52px;
-    transition: transform 0.2s;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
-}
-
 
 .buttons {
     margin-top: 10px;
+    margin-right: 1500px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-
+    justify-content: left;
+    gap: 50px;
 }
 
 .about_me {
 	display: inline-block;	
 	box-sizing: border-box;
 	outline: none;
-	border: 1px solid #575d85;
+	border: 1px solid #4c4f54;
 	border-radius: 50px;
 	height: 46px;
 	line-height: 46px;
@@ -86,7 +68,7 @@ header h1, p {
 	text-decoration: none;
 	color: white;
     font-family: "JetBrains Mono";
-	background-color: #575d85;
+	background-color: transparent;
 	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
 	cursor: pointer;
 	user-select: none;
@@ -112,7 +94,7 @@ header h1, p {
 	display: inline-block;	
 	box-sizing: border-box;
 	outline: none;
-	border: 1px solid #575d85;
+	border: 1px solid #4c4f54;
 	border-radius: 50px;
 	height: 46px;
 	line-height: 46px;
@@ -122,7 +104,7 @@ header h1, p {
 	text-decoration: none;
 	color: white;
     font-family: "JetBrains Mono";
-	background-color: #575d85;
+	background-color: transparent;
 	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
 	cursor: pointer;
 	user-select: none;
@@ -152,7 +134,7 @@ main h3 {
     font-size: 55px;
     margin-top: 10px;
     margin-bottom: 1px;
-    color: #747896;
+    color: #838282;
     z-index: 1;
 }
 
@@ -217,7 +199,7 @@ main h3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-image);
     background-size: 100%;
     background-position: center 5%;
-    color: #757FC0;
+    color: #4c4f54;
     border: solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
@@ -233,7 +215,7 @@ main h3 {
 footer {
     margin-top: auto;
     padding: 15px;
-    background-color:#747896;
+    background-color:#353a3e;
     color: white;
     z-index: 1;
     border-top-left-radius: 20px;

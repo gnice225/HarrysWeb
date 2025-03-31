@@ -35,6 +35,11 @@ header h1, p {
     color: #bfbfbf;
 }
 
+header h1 {
+    margin-right: 20px;
+    font-size: 70px;
+    margin-top: 10px;
+}
 
 /* Контейнер для центрирования заголовка и иконок */
 .header-content {

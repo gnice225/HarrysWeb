@@ -39,6 +39,7 @@ header h1 {
     margin-right: 20px;
     font-size: 70px;
     margin-top: 10px;
+    text-shadow: 3px 11px 0px wheat;
 }
 
 /* Контейнер для центрирования заголовка и иконок */
